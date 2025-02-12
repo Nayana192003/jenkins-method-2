@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Nayana192003/jenkins-method-2.git'
+                git branch: 'main', url: 'https://github.com/Nayana192003/jenkins-method-2.git'
             }
         }
         stage('Clean') {
